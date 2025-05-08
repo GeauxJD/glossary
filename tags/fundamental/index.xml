@@ -66,7 +66,11 @@ attempts to split the difference, defining DAST as analyzing
 operational phases. They simulate attacks against an application
 (typically web-enabled applications, services, and APIs), analyze
 the application’s reactions, and determine whether it is vulnerable.&amp;rdquo;&lt;/p>
-&lt;p>Source: &lt;a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204C.pdf">https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204C.pdf&lt;/a>&lt;/p></description></item><item><title>: Hardening</title><link>https://glossary.openssf.org/hardening/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glossary.openssf.org/hardening/</guid><description>
+&lt;p>Source: &lt;a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204C.pdf">https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-204C.pdf&lt;/a>&lt;/p></description></item><item><title>: Fuzzing</title><link>https://glossary.openssf.org/fuzzing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glossary.openssf.org/fuzzing/</guid><description>
+&lt;p>Fuzzing, also called fuzz testing, is an automated verification technique that involves providing invalid, unexpected, or random data as inputs to a computer program. The program is executed and monitored for exceptions such as crashes, failing built-in code assertions, or potential memory leaks.&lt;/p>
+&lt;p>Fuzz testing differs from traditional software testing. A traditional software tests sends a known input, executes the program, and verifies that the output is correct. Traditional software tests are much more sensitive to incorrect outputs, but these tests take time to create because the correct output must be determined (requiring an &amp;ldquo;oracle&amp;rdquo;). Fuzz testing abandons the need to know the correct output, making it easy to apply many more inputs but reducing the ability to detect errors in each execution. Many systems use traditional software testing to check basic functionality and combine that with fuzzing to attempt to detect problems like security vulnerabilities.&lt;/p>
+&lt;p>The term &amp;ldquo;fuzz&amp;rdquo; and the concept of fuzz testing originates from work by Prof. Barton Miller at the University of Wisconsin published in 1990.&lt;/p>
+&lt;p>Source: &lt;a href="https://en.wikipedia.org/w/index.php?title=Fuzzing&amp;oldid=1270167521">https://en.wikipedia.org/w/index.php?title=Fuzzing&amp;oldid=1270167521&lt;/a>&lt;/p></description></item><item><title>: Hardening</title><link>https://glossary.openssf.org/hardening/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glossary.openssf.org/hardening/</guid><description>
 &lt;p>&amp;ldquo;Security hardening is the process of enhancing the security posture
 of a system or network by implementing a series of proactive measures
 to reduce vulnerabilities and mitigate potential risks. This includes
@@ -90,4 +94,28 @@ hardening.&lt;/p>
 &lt;p>Source: &lt;a href="https://www.atera.com/glossary/security-hardening/">https://www.atera.com/glossary/security-hardening/&lt;/a>&lt;/p></description></item><item><title>: Integrity</title><link>https://glossary.openssf.org/integrity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glossary.openssf.org/integrity/</guid><description>
 &lt;p>A property whereby data has not been altered in an
 unauthorized manner since it was created, transmitted, or stored.&lt;/p>
-&lt;p>Source: &lt;a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-152.pdf">https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-152.pdf&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>Source: &lt;a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-152.pdf">https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-152.pdf&lt;/a>&lt;/p></description></item><item><title>: Negative Testing</title><link>https://glossary.openssf.org/negative-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glossary.openssf.org/negative-testing/</guid><description>
+&lt;p>Negative testing, also called “error path testing” or “invalid input
+testing,” is a software testing methodology that evaluates how
+systems and applications handle unexpected inputs and conditions.
+This is contrasted with positive testing, that is, testing the &amp;ldquo;happy path&amp;rdquo;
+initiated by expected inputs.&lt;/p>
+&lt;p>Negative testing includes testing to ensure that what should not happen
+does not happen. This is vital for security.
+For example, if a user should not be able to delete an object owned by another
+user, it&amp;rsquo;s important to &lt;em>test&lt;/em> this is the case.
+If a field is supposed to only provide a number, a negative test should
+ensure that non-numbers are rejected.
+Many test suites only test the &amp;ldquo;happy path&amp;rdquo; of expected values.
+Many security properties are negative (&amp;ldquo;X should never happen&amp;rdquo;), so failing to
+apply negative testing can lead to serious security vulnerabilities.&lt;/p>
+&lt;p>Source: &lt;a href="https://www.ranorex.com/blog/positive-testing-vs-negative-testing-key-differences/">https://www.ranorex.com/blog/positive-testing-vs-negative-testing-key-differences/&lt;/a>&lt;/p></description></item><item><title>: Object code</title><link>https://glossary.openssf.org/object-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glossary.openssf.org/object-code/</guid><description>
+&lt;p>Object code is a form of a work that is not source code.&lt;/p>
+&lt;p>A build process converts source code into object code.&lt;/p>
+&lt;p>Source: &lt;a href="https://www.gnu.org/licenses/gpl-3.0.en.html">https://www.gnu.org/licenses/gpl-3.0.en.html&lt;/a>&lt;/p></description></item><item><title>: Reproducible Build</title><link>https://glossary.openssf.org/reproducible-build/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glossary.openssf.org/reproducible-build/</guid><description>
+&lt;p>A build is &lt;em>reproducible&lt;/em> if given the same source code, any party can recreate bit-by-bit identical copies of all specified artifacts. Information about the build environment and build instructions is usually needed to achieve that. This creates an independently-verifiable path from source to binary code and counters attacks on the build process.&lt;/p>
+&lt;p>A &lt;em>verified&lt;/em> reproducible build is a build result that has been independently verified to reproduce. Verified reproducible builds allow multiple third parties to come to a consensus on a “correct” result, highlighting any deviations as suspect and worthy of scrutiny. See &lt;a href="https://reproducible-builds.org/docs/">https://reproducible-builds.org/docs/&lt;/a> for tips on how to achieve reproducible builds.&lt;/p>
+&lt;p>Source: &lt;a href="https://reproducible-builds.org/docs/definition/">https://reproducible-builds.org/docs/definition/&lt;/a>&lt;/p></description></item><item><title>: Source code</title><link>https://glossary.openssf.org/source-code/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://glossary.openssf.org/source-code/</guid><description>
+&lt;p>Source code is the preferred form of the work for making modifications to it.&lt;/p>
+&lt;p>A build process converts source code into object code.&lt;/p>
+&lt;p>Source: &lt;a href="https://www.gnu.org/licenses/gpl-3.0.en.html">https://www.gnu.org/licenses/gpl-3.0.en.html&lt;/a>&lt;/p></description></item></channel></rss>
